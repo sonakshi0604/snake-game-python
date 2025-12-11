@@ -1,0 +1,1 @@
+print ("my score is 100")
