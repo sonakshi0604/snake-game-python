@@ -1,3 +1,2 @@
 # snake-game-python
 We just started...
-print("update")

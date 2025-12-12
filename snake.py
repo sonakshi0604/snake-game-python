@@ -1,5 +1,4 @@
 print("This file for code of snake!")
-print("update")
 #snake.py
 
 from turtle import Turtle
