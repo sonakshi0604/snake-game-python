@@ -14,7 +14,7 @@ def main():
     sc.onkey(snake.up,"Up")
     sc.onkey(snake.down,"Down")
     sc.onkey(snake.left,"Left")
-    sc.onkey(snake.right,"right")
+    sc.onkey(snake.right,"Right")
 
     game_is_on=True
     while game_is_on:
