@@ -1,24 +1,24 @@
 import time
-from screen_setup import create_screen
+from screen import create_screen
 from snake import Snake
 from food import Food
 from score import Scoreboard
 
 def main():
-    screen=create_screen()
+    sc=create_screen()
     snake=Snake()
     food=Food()
     score=Scoreboard()
 
-    screen.listen()
-    screen.onkey(snake.up,"Up")
-    screen.onkey(snake.down,"Down")
-    screen.onkey(snake.left,"Left")
-    screen.onkey(snake.right,"right")
+    sc.listen()
+    sc.onkey(snake.up,"Up")
+    sc.onkey(snake.down,"Down")
+    sc.onkey(snake.left,"Left")
+    sc.onkey(snake.right,"right")
 
     game_is_on=True
     while game_is_on:
-        screen.update()
+        sc.update()
         time.sleep(0.1)
         snake.move()
 
@@ -37,7 +37,7 @@ def main():
                 score.reset()
                 snake.reset()
 
-    screen.mainloop()
+    sc.mainloop()
 
 if __name__=="__main__":
     main()
