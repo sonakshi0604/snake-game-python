@@ -6,7 +6,7 @@ FONT = ("Arial", 18, "normal")
 class Scoreboard(Turtle):
 
     def __init__(self):
-        super()._init_()
+        super().__init__()
         self.score = 0
         self.color("white")
         self.penup()
