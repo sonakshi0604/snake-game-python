@@ -3,8 +3,8 @@ import random
 
 class Food(Turtle):
 
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
         self.shape("circle")
         self.color("blue")
         self.penup()
